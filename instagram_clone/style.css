@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  /* border: 1px solid red; */
+}
+
+body {
+  background-color : black;
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  padding: 40px;
+  border-right: 1px solid #2c2c2c;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu li {
+  margin-bottom: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-bottom {
+  padding-top: 20vh;
+}
+
+.sidebar img .profile-img {
+  border-radius: 50%;
+}
+
+.main {
+  flex: 1;
+  padding: 0 30px;
+}
+
+.story-bar {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  border: 1px solid #434343;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.story-bar img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border: 2px solid black;
+}
+
+.post {
+  border: 1px solid rgb(85, 85, 85);
+  background-color: black;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.post__header,
+.post__footer {
+  padding: 15px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-info .profile-img {
+  border-radius: 50%;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.more-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  float: right;
+  cursor: pointer;
+}
+
+.post__image img {
+  width: 100%;
+  height: auto;
+}
+
+.post__actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.left-icons span,
+.right-icon span {
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.likes {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.caption {
+  margin-bottom: 10px;
+}
+
+.add-comment {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #efefef;
+
+  padding-top: 10px;
+}
+
+.add-comment input {
+  flex: 1;
+  border: none;
+  padding: 8px;
+  outline: none;
+  background-color: transparent;
+  color: white;
+}
+
+.add-comment button {
+  border: none;
+  background-color: transparent;
+  color: #3e00f6;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.recommend {
+  width: 300px;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+}
+
+.my-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.my-profile .profile-img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.my-profile span {
+  display: block;
+}
+
+.recommend-list > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.recommend-user-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.recommend-user button {
+  margin-top: 5px;
+  background-color: transparent;
+  border: none;
+  color: #0095f6;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.recommend-user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.recommend-user .profile-img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.recommend-user .username {
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+.follow-btn {
+  color: #0095f6;
+  background: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.add-comment input::placeholder {
+  color: #999;
+}
