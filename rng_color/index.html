@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>배경색 + 카운터</title>
+</head>
+<body>
+
+    <button onclick="changeColor()">배경색 바꾸기</button>
+
+    <div class="buttons-counter">
+    <button onclick="increase()">+</button>
+    <button onclick="decrease()">-</button>
+    </div>
+    <p id="count">0</p>
+    
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; 
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;      
+            border: none;     
+            border-radius: 8px;  
+            font-size: 20px;
+            box-shadow: 0 3px 5px 0px gray;
+        }
+        .buttons-counter {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+
+    <script>
+    function changeColor() {
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+    }
+
+    let count = 0;
+
+    function increase() {
+        count++;
+        document.getElementById("count").innerText = count;
+    }
+
+    function decrease() {
+        count--;
+        document.getElementById("count").innerText = count;
+    }
+    </script>
+
+</body>
+</html>
